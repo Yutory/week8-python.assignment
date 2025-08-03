@@ -108,7 +108,7 @@ high_performers = []
 average_performers = []
 low_performers = []
 
-# Classify each student
+#using for loops to Classify and sort through each student in students.
 for student in students:
     student_id = student['id']
     name = student['name']
@@ -122,12 +122,13 @@ for student in students:
     else:
         low_performers.append(entry)
 
-#Summary
+#Summary; using the len function to print the number of every student in each list category.
+print("Summary Report\n *************************************")
 print(f"High Performers: {len(high_performers)}")
 print(f"Average Performers: {len(average_performers)}")
 print(f"Low Performers: {len(low_performers)}\n")
 
-#Group Output
+#full list of students in categories
 print("All High Performers:", high_performers)
 print("\nAll Average Performers:", average_performers)
 print("\nAll Low Performers:", low_performers)
